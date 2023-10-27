@@ -1,19 +1,18 @@
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "Welcome!",
 	Content = "Credits to: fede_nc in Discord",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://7992557371",
 	Time = 10
 })
 local Window = OrionLib:MakeWindow({Name = "Fede's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
-	Name = "Player",
-	Icon = "rbxassetid://4483345998",
+	Name = "👤  Player",
+	Icon = "rbxassetid://7992557371",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "Tools"
+	Name = "🔨  Tools"
 })
 Tab:AddButton({
 	Name = "Infinity Yield",
@@ -37,6 +36,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifv
   	end    
 })
 Tab:AddButton({
+	Name = "FPS Booster",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zQUqDRdJ",true))();
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
 	Name = "RTX",
 	Callback = function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-RTX-GUI-Pshade-7593"))()
@@ -44,7 +50,7 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-RTX-GUI-Psh
   	end    
 })
 local Section = Tab:AddSection({
-	Name = "Others"
+	Name = "⚙️  Others"
 })
 Tab:AddButton({
 	Name = "Fly",
@@ -89,12 +95,29 @@ loadstring(game:HttpGet("https://pastebin.com/raw/UjcfSzdH"))()
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "Blade Ball",
-	Icon = "rbxassetid://4483345998",
+	Name = "🗡  Blade Ball",
+	Icon = "rbxassetid://7992557371",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "KeyLess"
+	Name = "🚫  No-Gui"
+})
+Tab:AddButton({
+	Name = "Auto Parry",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Blade-Ball/main/Auto%20Parry",true))();
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Spam Parry (Hold Block Button)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Blade-Ball/main/Spam%20Block",true))();
+      		print("button pressed")
+  	end    
+})
+local Section = Tab:AddSection({
+	Name = "🔓  KeyLess"
 })
 Tab:AddButton({
 	Name = "YsacXy Hub",
@@ -111,12 +134,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-bet
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "Blox Fruit",
-	Icon = "rbxassetid://4483345998",
+	Name = "👊  Blox Fruit",
+	Icon = "rbxassetid://7992557371",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "KeyLess"
+	Name = "🔓  KeyLess"
 })
 Tab:AddButton({
 	Name = "MTriet Hub",
