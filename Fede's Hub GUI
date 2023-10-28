@@ -1,10 +1,9 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-OrionLib:MakeNotification({
-	Name = "Welcome!",
-	Content = "Credits to: fede_nc in Discord",
-	Image = "rbxassetid://7992557371",
-	Time = 10
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Welcome!",
+	Text = "Credits to: fede_nc in Discord",
+	Duration = 5
 })
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Fede's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "👤  Player",
@@ -29,7 +28,7 @@ loadstring(game:HttpGetAsync("https://gist.githubusercontent.com/DinosaurXxX/b75
   	end    
 })
 Tab:AddButton({
-	Name = "KeyBoard",
+	Name = "KeyBoard (For Mobile)",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
       		print("button pressed")
@@ -51,6 +50,30 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-RTX-GUI-Psh
 })
 local Section = Tab:AddSection({
 	Name = "⚙️  Others"
+})
+Tab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 1,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		print(Value)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+Tab:AddSlider({
+	Name = "JumpPower",
+	Min = 1,
+	Max = 500,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Power",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
 })
 Tab:AddButton({
 	Name = "Fly",
@@ -81,7 +104,14 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Tp-tool-scr
   	end    
 })
 Tab:AddButton({
-	Name = "Shift Lock",
+	Name = "Button!",
+	Callback = function()
+https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Anri%20Afk
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Shift Lock (For Mobile)",
 	Callback = function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Universal-Shift-Lock-6655"))()
       		print("button pressed")
@@ -105,14 +135,13 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Auto Parry",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Blade-Ball/main/Auto%20Parry",true))();
-      		print("button pressed")
+https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Auto%20Parry
   	end    
 })
 Tab:AddButton({
 	Name = "Spam Parry (Hold Block Button)",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Blade-Ball/main/Spam%20Block",true))();
+https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Spam%20Parry
       		print("button pressed")
   	end    
 })
@@ -123,6 +152,13 @@ Tab:AddButton({
 	Name = "YsacXy Hub",
 	Callback = function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/Hqr4NnFU'),true))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Ln Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-Ln-Hub-V3-Updated-8220"))()
       		print("button pressed")
   	end    
 })
@@ -146,6 +182,13 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
     print("Clicked")
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Domadic Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
       		print("button pressed")
   	end    
 })
