@@ -1,15 +1,26 @@
+-- Notification
+
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Welcome!",
-	Text = "Credits to: fede_nc in Discord",
-	Duration = 5
+	Title = "Welcome To Fede's Hub!",
+	Text = "Made by: fede_nc in Discord",
+	Duration = 2.4
 })
+
+-- GUI
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Fede's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+-- Player
+
 local Tab = Window:MakeTab({
 	Name = "👤  Player",
 	Icon = "rbxassetid://7992557371",
 	PremiumOnly = false
 })
+
+-- Tools
+
 local Section = Tab:AddSection({
 	Name = "🔨  Tools"
 })
@@ -35,6 +46,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifv
   	end    
 })
 Tab:AddButton({
+	Name = "Anti Afk",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Anri%20Afk",true))();
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
 	Name = "FPS Booster",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zQUqDRdJ",true))();
@@ -48,6 +66,9 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-RTX-GUI-Psh
       		print("button pressed")
   	end    
 })
+
+-- Others
+
 local Section = Tab:AddSection({
 	Name = "⚙️  Others"
 })
@@ -104,13 +125,6 @@ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Tp-tool-scr
   	end    
 })
 Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Anri%20Afk
-      		print("button pressed")
-  	end    
-})
-Tab:AddButton({
 	Name = "Shift Lock (For Mobile)",
 	Callback = function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Universal-Shift-Lock-6655"))()
@@ -124,27 +138,36 @@ loadstring(game:HttpGet("https://pastebin.com/raw/UjcfSzdH"))()
       		print("button pressed")
   	end    
 })
+
+-- Blade Ball Tab
+
 local Tab = Window:MakeTab({
 	Name = "🗡  Blade Ball",
 	Icon = "rbxassetid://7992557371",
 	PremiumOnly = false
 })
+
+-- No Gui buttons
+
 local Section = Tab:AddSection({
 	Name = "🚫  No-Gui"
 })
 Tab:AddButton({
 	Name = "Auto Parry",
 	Callback = function()
-https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Auto%20Parry
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Auto%20Parry",true))();
   	end    
 })
 Tab:AddButton({
 	Name = "Spam Parry (Hold Block Button)",
 	Callback = function()
-https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Spam%20Parry
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Spam%20Parry",true))();
       		print("button pressed")
   	end    
 })
+
+-- KeyLess Bottons
+
 local Section = Tab:AddSection({
 	Name = "🔓  KeyLess"
 })
@@ -169,11 +192,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-bet
       		print("button pressed")
   	end    
 })
+
+-- Blox Fruit Tab
+
 local Tab = Window:MakeTab({
 	Name = "👊  Blox Fruit",
 	Icon = "rbxassetid://7992557371",
 	PremiumOnly = false
 })
+
+-- Keyless Buttons
+
 local Section = Tab:AddSection({
 	Name = "🔓  KeyLess"
 })
