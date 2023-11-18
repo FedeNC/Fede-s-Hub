@@ -1,0 +1,53 @@
+-- Notification
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Welcome To Fede's Hub!",
+	Text = "Made by: fede_nc in Discord",
+	Duration = 2.4
+})
+
+-- GUI
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Fede's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+-- Blade Ball Tab
+
+local Tab = Window:MakeTab({
+	Name = "🗡  Combat",
+	Icon = "rbxassetid://7992557371",
+	PremiumOnly = false
+})
+
+-- Auto Parry buttons
+
+local Section = Tab:AddSection({
+	Name = "🛡 Auto Parry"
+})
+Tab:AddButton({
+	Name = "Auto Parry",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Auto%20Parry",true))();
+      		print("button pressed")
+  	end    
+})
+
+-- Spam Parry buttons
+
+local Section = Tab:AddSection({
+	Name = "🖱 Spam Parry"
+})
+Tab:AddButton({
+	Name = "Spam Parry (Toggle Block Button)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/togle%20spam%20parry",true))();
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Spam Parry (Hold Block Button)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FedeNC/Fede-s-Hub/main/Spam%20Parry",true))();
+      		print("button pressed")
+  	end    
+})
