@@ -1,0 +1,21 @@
+-- Notification
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Fullbright";
+    Text = "Loaded";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 5;
+
+-- Fullbright
+
+local lighting = game:GetService("Lighting")
+
+local function enableFullbright()
+    lighting.Brightness = 10
+    lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+    lighting.ClockTime = 14
+    lighting.FogEnd = 100000
+    lighting.GlobalShadows = false
+end
+
+enableFullbright()
